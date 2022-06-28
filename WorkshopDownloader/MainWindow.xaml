@@ -6,14 +6,18 @@
         xmlns:local="clr-namespace:WorkshopDownloader"
         mc:Ignorable="d" Height="450" Width="347.867" ResizeMode="NoResize" Title="Workshop Downloader">
     <Grid>
-        <Button x:Name="download_button" Content="Download" HorizontalAlignment="Left" Margin="10,381,0,0" VerticalAlignment="Top" Width="322" Height="29" FontFamily="Comic Sans MS" FontSize="20"/>
-        <TextBox x:Name="steamcmd_field" HorizontalAlignment="Left" Height="28" Margin="10,43,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="322" FontFamily="Comic Sans MS" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Путь к SteamCMD" VerticalAlignment="Top" Width="322" Height="28" FontFamily="Comic Sans MS" FontSize="16"/>
-        <TextBox x:Name="game_field" HorizontalAlignment="Left" Height="28" Margin="10,109,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="322" FontFamily="Comic Sans MS" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" Height="28" FontFamily="Comic Sans MS" FontSize="16"><Run Text="ID "/><Run Text="игры"/></TextBlock>
-        <TextBox x:Name="item_field" HorizontalAlignment="Left" Height="28" Margin="10,175,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="322" FontFamily="Comic Sans MS" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" Height="28" FontFamily="Comic Sans MS" FontSize="16"><Run Text="ID "/><Run Text="прдеметов ("/><Run Text="перечисление через "/><Run Text="';')"/></TextBlock>
-        <CheckBox x:Name="open_directory_field" Content="Открыть папку с предметами(модами)" HorizontalAlignment="Left" Margin="10,208,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="16"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="187*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="download_button" Content="Download" HorizontalAlignment="Left" Margin="10,334.8,0,0" VerticalAlignment="Top" Width="322" Height="29" FontFamily="Comic Sans MS" FontSize="20" Grid.Row="1"/>
+        <TextBox x:Name="steamcmd_field" HorizontalAlignment="Left" Height="28" Margin="10,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" FontFamily="Comic Sans MS" FontSize="16" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" Height="28" FontFamily="Comic Sans MS" FontSize="16"><Run Text="Путь к SteamCMD "/><Run Text="("/><Run Text="там где "/><Run Text="exe)"/></TextBlock>
+        <TextBox x:Name="game_field" HorizontalAlignment="Left" Height="28" Margin="10,62.8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" FontFamily="Comic Sans MS" FontSize="16" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,29.8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" Height="28" FontFamily="Comic Sans MS" FontSize="16" Grid.Row="1"><Run Text="ID "/><Run Text="игры"/></TextBlock>
+        <TextBox x:Name="item_field" HorizontalAlignment="Left" Height="28" Margin="10,128.8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" FontFamily="Comic Sans MS" FontSize="16" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,95.8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" Height="28" FontFamily="Comic Sans MS" FontSize="16" Grid.Row="1"><Run Text="ID "/><Run Text="прдеметов ("/><Run Text="перечисление через "/><Run Text="';')"/></TextBlock>
+        <CheckBox x:Name="open_directory_field" Content="Открыть папку с предметами(модами)" HorizontalAlignment="Left" Margin="10,161.8,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="16" Grid.Row="1"/>
 
     </Grid>
 </Window>
